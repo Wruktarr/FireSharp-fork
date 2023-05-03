@@ -61,7 +61,7 @@ response.Result.name //The result will contain the child name of the new data th
 ```csharp
 
  FirebaseResponse response = await _client.GetAsync("todos/set");
- Todo todo=response.ResultAs<Todo>(); //The response will contain the data being retreived
+ Todo todo = response.ResultAs<Todo>(); //The response will contain the data being retreived
 ```
 #### Update
 ```csharp
@@ -70,13 +70,13 @@ var todo = new Todo {
                 priority = 1
             };
 
-FirebaseResponse response =await  _client.UpdateAsync("todos/set", todo);
+FirebaseResponse response = await _client.UpdateAsync("todos/set", todo);
 Todo todo = response.ResultAs<Todo>(); //The response will contain the data written
 ```
 #### Delete
 ```csharp
 
-FirebaseResponse response =await  _client.DeleteAsync("todos"); //Deletes todos collection
+FirebaseResponse response = await _client.DeleteAsync("todos"); //Deletes todos collection
 Console.WriteLine(response.StatusCode);
 ```
 #### Listen **Streaming from the REST API**
