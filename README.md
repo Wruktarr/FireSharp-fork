@@ -54,7 +54,7 @@ Todo result = response.ResultAs<Todo>(); //The response will contain the data wr
                 name = "Execute PUSH",
                 priority = 2
             };
-PushResponse response =await  _client.PushAsync("todos/push", todo);
+PushResponse response = await _client.PushAsync("todos/push", todo);
 response.Result.name //The result will contain the child name of the new data that was added
 ```
 #### Get
