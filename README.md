@@ -33,7 +33,7 @@ Install-Package FireSharp -Version 1.1.0
   };
 ````
 ```csharp
-IFirebaseClient  client = new FirebaseClient(config);
+IFirebaseClient client = new FirebaseClient(config);
 ```
 So far, supported methods are :
 
@@ -105,4 +105,3 @@ response.Dispose();
 
 More information about Firebase and the Firebase API is available at the
 [official website](http://www.firebase.com/).
-
